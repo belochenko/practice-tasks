@@ -12,4 +12,3 @@ def square_all(numbers):
          yield n**2
          
 squares = square_all(favorite_numbers)
-print(list(squares))

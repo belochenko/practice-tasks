@@ -1,4 +1,5 @@
 import math
+
 def willis_product():
     half_of_pi = 3.14159265358979312 / 2
     pi_1 = 1.
