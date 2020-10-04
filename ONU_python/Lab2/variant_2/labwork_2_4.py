@@ -22,4 +22,3 @@ ind_max = np.argmax(x)
 i1 = a[ind_max // 10]
 j1 = a[ind_max % 10]
 print(f'Two dots {i1} and {j1}')
-
