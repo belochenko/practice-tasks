@@ -9,9 +9,3 @@ def silv(a):
             check = False
             break
     return check
-
-
-
-
-
-
