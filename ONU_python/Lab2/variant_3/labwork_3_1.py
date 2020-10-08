@@ -1,6 +1,7 @@
 import numpy as np
 
-def  v2normalize(x):
+
+def v2normalize(x):
     vector = np.linalg.norm(x)
     if vector == 0:
         return x
