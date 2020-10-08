@@ -1,7 +1,6 @@
 import numpy as np
 from scipy.spatial import distance
-import random
-import math
+
 
 def minimum(x):
     minn = x[0][1]
@@ -22,8 +21,6 @@ def two_dots():
     for i in range(10):
         for j in range(10):
             x[i][j] = distance.chebyshev(a[i], a[j])
-
-
     ind_min = minimum(x)
     res = a[ind_min[0]]
 

@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def silverster(a):
     n = len(a)
     check = True
