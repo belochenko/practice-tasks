@@ -1,11 +1,10 @@
 import numpy as np
 import random
 
-a = np.random.uniform(-1,1,10)
-b = np.zeros(10)
+a = np.random.uniform(-1,1,5)
+b1 = (1 - a**2) ** 0.5
+b2 = -(1 - a**2) ** 0.5
 
-tmp = 1 - pow(a, 2)
-b = pow(tmp, 0.5)
 
 
 def point2angle(a, b):
@@ -19,7 +18,9 @@ def min_angle(a, b, c):
     y = c[index_min]
     return x, y
 
-array = point2angle(a, b)
+array1 = point2angle(a, b1)
+array2 = point2angle(a, b2)
+array = np.concatenate((array1, array2))
 print(array)
 print(min_angle(array, a, b))
 sorted_array = np.sort(array)  #3 task

@@ -8,9 +8,8 @@ array1 = np.tile(b, (6, 1))
 
 A = np.concatenate([array, array1, array], axis = 1)
 
-s = 0
-for i in range(6):
-    for j in range(6):
-        s += math.fabs(A[i][j])
+A = np.fabs(A)
+
+s = np.sum(A)
         
 print(int(s))
