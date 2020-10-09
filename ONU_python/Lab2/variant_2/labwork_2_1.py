@@ -3,10 +3,9 @@ import random
 
 a = np.random.uniform(-1,1,10)
 b = np.zeros(10)
-for i in range(0, 10, 2):
-    tmp = 1 - pow(a[i], 2)
-    b[i] = pow(tmp, 0.5)
-    b[i + 1] = b[i] * (-1)
+
+tmp = 1 - pow(a, 2)
+b = pow(tmp, 0.5)
 
 
 def point2angle(a, b):
@@ -20,14 +19,14 @@ def min_angle(a, b, c):
     y = c[index_min]
     return x, y
 
-
 array = point2angle(a, b)
 print(array)
 print(min_angle(array, a, b))
 sorted_array = np.sort(array)  #3 task
 print(sorted_array)
-sorted_array = [x for x in sorted_array if x < 0.5]  #4 task
+np.clip(sorted_array, 0, 1)  #4 task
 print(sorted_array)
+
 
 
 

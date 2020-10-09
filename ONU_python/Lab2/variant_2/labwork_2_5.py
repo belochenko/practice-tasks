@@ -5,7 +5,8 @@ def function(file):
     with open(file) as data:
         reader = csv.reader(data, delimiter = ",")
         reader = list(reader)
-        reader = [int(x) for x in reader[0]]
+        #reader = [int(x) for x in reader[0]]
+        reader1 = reader.astype(int)
         mid = np.mean(reader)
         index = np.argmax(reader)
         reader[index] = mid
