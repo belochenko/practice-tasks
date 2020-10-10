@@ -4,7 +4,7 @@ import csv
 
 def function(f):
     with open(f) as data:
-        reader = csv.reader(data, delimiter = ",")
+        reader = csv.reader(data, delimiter=",")
         reader = list(reader)
         reader = [int(x) for x in reader[0]]
         mid = np.mean(reader)
@@ -17,5 +17,5 @@ def function(f):
         f.close()
     
 
-file = "input.csv"
+file = "../variant_3/input.csv"
 function(file)
