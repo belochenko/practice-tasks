@@ -10,6 +10,6 @@ def silv(a):
             break
     return check
 
-arr = np.array([[22, -9, 7], [-9, 22, -19], [7, -19, 17]])
+arr = np.array([[4, 9, -3, 0, 2], [-1, 3, 3, 8, -5], [-2, 3, 7, 4, 6], [1, 2, -4, 1, 9], [-1, 3, 5, -2, 8]])
 
-print(silv(arr))
+print(f'Is this matrix meets Sylvesters criterion? {silv(arr)}')

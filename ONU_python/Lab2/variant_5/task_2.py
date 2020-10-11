@@ -7,8 +7,8 @@ b = np.diagflat([[3,3],[3,3]])
 c = np.concatenate((arr2, b), axis = 1)
 
 block_matrix = np.concatenate((arr1, arr1, c), axis = 0)
-print(block_matrix)
+print(f'Block matrix is: {block_matrix}')
 
 diag = np.diag(block_matrix, 1)
 res = np.sum(diag)
-print(res)
+print(f'Sum of elements is: {res}')
