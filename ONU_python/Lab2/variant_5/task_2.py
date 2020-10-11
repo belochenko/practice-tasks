@@ -9,10 +9,6 @@ c = np.concatenate((arr2, b), axis = 1)
 block_matrix = np.concatenate((arr1, arr1, c), axis = 0)
 print(block_matrix)
 
-s = 0
-
-for i in range(5):
-    for j in range(5):
-        s +=  block_matrix[i][i+1]
-        break
-print(s)
+diag = np.diag(block_matrix, 1)
+res = np.sum(diag)
+print(res)
