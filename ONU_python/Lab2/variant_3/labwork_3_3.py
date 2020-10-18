@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def silv(a):
+def silverster(a):
     n = len(a)
     check = True
     for i in range(n):
