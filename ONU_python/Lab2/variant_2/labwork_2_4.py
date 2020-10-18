@@ -16,5 +16,3 @@ def two_dots():
     j1 = a[ind_max % 10]
     
     return f'Two dots {i1} and {j1}'
-
-
