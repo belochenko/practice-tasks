@@ -1,7 +1,3 @@
 pytest
-<<<<<<< HEAD
 numpy 
 scipy
-=======
-scipy 
->>>>>>> feature_var2
