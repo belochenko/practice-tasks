@@ -22,7 +22,7 @@ array1 = point2angle(a, b1)
 array2 = point2angle(a, b2)
 array = np.concatenate((array1, array2))
 print(array)
-print(min_angle(array, a, b))
+print(min_angle(array, a, b1))
 sorted_array = np.sort(array)  #3 task
 print(sorted_array)
 np.clip(sorted_array, 0, 1)  #4 task
