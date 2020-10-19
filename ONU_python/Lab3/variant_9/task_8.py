@@ -18,5 +18,4 @@ F = X**2 + Y**2
 plt.contour(X, Y, F, [r**2])
 
 plt.grid(True)
-#plt.show()
 plt.savefig('output.png', dpi = 400)
