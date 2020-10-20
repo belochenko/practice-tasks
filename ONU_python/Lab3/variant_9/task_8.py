@@ -11,6 +11,8 @@ fig = plt.figure(figsize = (6, 6))
 ax = fig.add_subplot(1,1,1)
 rect = plt.Rectangle((0,0-r), int(a), int(a), angle = 45.0)
 ax.add_patch(rect)
+ax.set_xlabel('x')
+ax.set_ylabel('y')
 
 plt.plot(0, 0, marker='o', color = 'yellow')
 X, Y = np.meshgrid(x, y)
