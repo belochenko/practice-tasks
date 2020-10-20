@@ -3,25 +3,24 @@ import numpy as np
 
 x = np.linspace(-1, 1, 100)
 
-plt.subplot(221)
-plt.plot(x, x ** 2)
-plt.title(r'$y = x ^ 2$')
+first = plt.subplot(221)
+plt.plot(x, x ** 2, 'r-')
+plt.plot(x, x ** 3, 'b--')
+plt.title(r'$f, g$')
+first.set_xlabel('x')
+first.set_ylabel('y')
+first.legend(["y = x ** 2", "y = x ** 3"])
 plt.grid(True)
 
-plt.subplot(222)
-plt.plot(x, x ** 3)
-plt.title(r'$y = x ^ 3$')
+second = plt.subplot(222)
+plt.plot(x, x ** 4, 'r-')
+plt.plot(x, x ** 5, 'b--')
+plt.title(r'$u, v$')
+second.set_xlabel('x')
+second.set_ylabel('y')
+second.legend(["y = x ** 4", "y = x ** 5"])
 plt.grid(True)
 
-plt.subplot(223)
-plt.plot(x, x ** 4)
-plt.title(r'$y = x ^ 4$')
-plt.grid(True)
-
-plt.subplot(224)
-plt.plot(x, x ** 5)
-plt.title(r'$y = x ^ 5$')
-plt.grid(True)
 
 
 fig, ax = plt.subplots()
