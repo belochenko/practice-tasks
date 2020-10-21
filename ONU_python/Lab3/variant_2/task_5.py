@@ -1,4 +1,3 @@
-
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -14,5 +13,3 @@ plt.plot(-5, -21.7, marker='o', color='red')
 plt.annotate('A(-5, -21)', xy = (-5, -31), size = 15)
 
 plt.show()
-
-
