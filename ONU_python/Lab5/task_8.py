@@ -1,6 +1,6 @@
-from sympy import *
+import sympy as sp
 
-x = symbols('x')
-y = symbols('y',cls=Function)
-diffeq = Eq(y(x).diff(x, x) - 3*y(x).diff(x) + y(x), cos(x))
-pprint(dsolve(diffeq,y(x)))
+x = sp.symbols('x')
+y = sp.Function('y')
+sp.pprint(sp.dsolve(y(x).diff(x, 2) + 3*y(x).diff(x) + y(x) - sp.cos(x), y(x)))
+
