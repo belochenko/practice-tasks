@@ -12,3 +12,5 @@ x_min1 = spopt.fmin_bfgs(f, -10)
 print(x_min1)  # 1
 print(spopt.brent(f))  # 2
 print(spopt.fminbound(f, -10, 10))  # 3
+
+fig.show()
